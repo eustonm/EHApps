@@ -1,4 +1,5 @@
 """Interactive Linear Graph Plotter"""
+
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,8 +17,8 @@ b = st.number_input("Y-Intercept (b)", step=0.5, format="%.2f")
 
 # Zoom controls
 st.markdown("### Adjust Zoom/Scale")
-x_range = st.slider("X-axis Range", min_value=1, max_value=15, value=10, step=1)
-y_range = st.slider("Y-axis Range", min_value=1, max_value=15, value=10, step=1)
+x_range = st.slider("X-axis Range", min_value=1, max_value=20, value=10, step=1)
+y_range = st.slider("Y-axis Range", min_value=1, max_value=20, value=10, step=1)
 
 # Plot button
 plot = st.button("Plot Slope")
